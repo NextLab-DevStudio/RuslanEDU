@@ -1,0 +1,31 @@
+<!DOCTYPE html> <!--Классическая инициализания проекта на HTML-->
+<html lang="en"> <!--Классическая инициализания проекта на HTML-->
+<head>
+    <meta charset="UTF-8"> <!--Классическая инициализания проекта на HTML-->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"> <!--Классическая инициализания проекта на HTML-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!--Классическая инициализания проекта на HTML-->
+    <title>QR генератор</title> <!--Название-->
+    <link rel="stylesheet" href="src/style.css"> <!--Подключаем стили для страницы-->
+    <script src="src/lib/QRCreator.js" defer></script> <!--Подключаем скрипты для страницы-->
+    <script src="src/script.js" defer></script> <!--Подключаем скрипты для страницы-->
+</head>
+<body>
+    <header> <!--Верхняя часть страницы -->
+        <div class="title"> <!--Блок с названием-->
+            <h2>Генератор qr-кода</h2> <!--Текст с названием-->
+        </div>
+    </header>
+    <div class="container"> <!--Контейнер остальной страницы-->
+        <div class="qrgen"> <!--Окно в котором проходит генерация-->
+            <h2 class="qrgtpt">Сгенерировать QR-код</h2> <!--Текст вверху окна-->
+            <input class="inptxt" type="text" name="" id="inptxt" placeholder="Введите текст / ссылку / номер"> <!--Текстовое поле для ввода текста-->
+            <button class="genbutton" id="genbutton"><h3>Сгенерировать</h3></button> <!--Кнопка для генерации QR-кода-->
+            <div class="qrcontainer" id="qrcode"> <!--Контейнер в котором будет лежать в будущем сгенерированый QR-код-->
+                
+            </div>
+           <button id="download">Скачать</button> <!--Кнопка для скачивания QR-кода-->
+        </div>
+    </div>
+
+</body>
+</html> <!--Закрывающиеся теги-->
